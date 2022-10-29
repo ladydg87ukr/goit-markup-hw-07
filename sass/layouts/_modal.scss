@@ -1,0 +1,205 @@
+.backdrop {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+
+.modal {
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--primary-background-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms linear;
+    margin: 0;
+    padding: 0;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+
+}
+
+.modal-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-btn svg:focus,
+.modal-btn svg:hover {
+    fill: var(--accent-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin: 40px 40px 12px;
+}
+
+.modal-div {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.check-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-label {
+    display: block;
+    margin: 0;
+    padding-left: 40px;
+    margin-bottom: 4px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--grey-text-color);
+}
+
+.checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--logo-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.input-check:checked+.checkbox-text span {
+    background-color: var(--accent-text-color);
+    border-color: transparent;
+    fill: var(--light-text-color);
+}
+
+.input-check:focus+.checkbox-text span {
+    border-color: var(--accent-text-color);
+}
+
+/*.checkbox-text::before {
+  content: ;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.input-check:checked + .checkbox-text::before {
+  background-color: var(--accent-text-color);
+  background-image: url(../images/form/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}*/
+
+.modal-input,
+.comment-input {
+    width: 448px;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+    padding-left: 42px;
+    resize: none;
+}
+
+.modal-input:focus,
+.comment-input:focus {
+    border: 1px solid var(--accent-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus+.modal-input-icon {
+    fill: var(--accent-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-input {
+    height: 120px;
+    padding: 12px 16px;
+}
+
+.modal-input::placeholder,
+.comment-input::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input-icon {
+    position: absolute;
+    top: 25%;
+    left: 53px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.conditions {
+    color: var(--accent-text-color);
+    margin-left: 3px;
+}

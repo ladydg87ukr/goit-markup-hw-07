@@ -1,5 +1,16 @@
 /* Кнопки */
 
+.button {
+    display: inline-block;
+    font-family: inherit;
+    border: hidden;
+    cursor: pointer;
+}
+
+.buttom-list {
+    gap: 8px;
+}
+
 .button.primary {
     color: var(--light-text-color);
     background-color: var(--accent-text-color);

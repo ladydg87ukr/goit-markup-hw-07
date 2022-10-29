@@ -5,13 +5,24 @@
 @import './components/container';
 @import './utils/hidden';
 
+@import './components/lists';
 @import './components/buttons';
+@import './components/soc_icons';
+@import './components/main_texts';
 
-@import './layouts/logo';
+@import './components/logo';
 @import './layouts/header';
 @import './layouts/hero';
 
-@import './layouts/navigation';
-@import './layouts/contacts';
+@import './layouts/modal';
 
+@import './layouts/features';
+@import './layouts/ourworks';
+@import './layouts/ourteam';
+@import './layouts/ourclients';
 @import './layouts/portfolio';
+@import './layouts/footer';
+
+@import './components/navigation';
+@import './components/contacts';
+

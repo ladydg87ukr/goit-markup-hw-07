@@ -1,0 +1,79 @@
+/* Заголовки */
+
+.features-maintext,
+.ourworks-maintext,
+.ourteam-maintext,
+.ourclients-maintext {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.maintextheader-features {
+    margin-bottom: 10px;
+}
+
+.maintextheader-features,
+.maintextheader-join-us,
+.ourworks-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.maintextheader-join-us,
+.ourworks-text {
+    color: var(--primary-background-color);
+}
+
+
+.maintextheader-join-us {
+    margin-bottom: 20px;
+}
+
+.maintextheader-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin: 0 0;
+    padding-bottom: 10px;
+}
+
+.maintextheader-portfolio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0 0;
+}
+
+.maintext-portfolio {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--grey-text-color);
+    margin: 0 0;
+}
+
+.maintext-features {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey-text-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.maintext-team {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--grey-text-color);
+    margin: 0 0;
+}

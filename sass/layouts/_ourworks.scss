@@ -1,0 +1,26 @@
+/* Секція "Чим ми займаємося" */
+
+.ourworks {
+    background-color: var(--primary-background-color);
+    padding-bottom: 24px;
+}
+
+.ourworks-link {
+    text-decoration: none;
+    position: relative;
+}
+
+.our-works-image {
+    display: block;
+}
+
+.ourworks-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: +70px;
+    height: 70px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+}
