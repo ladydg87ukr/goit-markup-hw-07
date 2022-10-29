@@ -204,8 +204,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:absolute;
-  bottom:0;
+  position: relative;
+  bottom: +70px;
   height: 70px;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
