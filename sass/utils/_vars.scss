@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --logo-color: #000000;
+    --primary-text-color: #212121;
+    --accent-text-color: #2196f3;
+    --light-text-color: #ffffff;
+    --grey-text-color: #757575;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #2f303a;
+    --section-ourteam-background-color: #f5f4fa;
+    --svg-main-color: #afb1b8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

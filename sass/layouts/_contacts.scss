@@ -1,0 +1,45 @@
+.container-contacts {
+    display: flex;
+    margin-left: auto;
+    justify-content: baseline;
+}
+
+.contacts-li {
+    justify-content: center;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-footer .list,
+.contacts-footer .link,
+.contacts .list,
+.contacts .link {
+    text-decoration: none;
+}
+
+.contacts li {
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: block;
+}
+
+.contacts-footer li {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: block;
+}

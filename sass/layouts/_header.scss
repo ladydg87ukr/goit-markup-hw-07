@@ -1,0 +1,41 @@
+/* Контактная информация */
+
+.header-contacts-icon {
+    fill: var(--svg-main-color);
+    margin-right: 10px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-header,
+.tel-header {
+    color: var(--grey-text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-header:hover,
+.email-header:focus {
+    color: var(--accent-text-color);
+}
+
+.tel-header:hover,
+.tel-header:focus {
+    color: var(--accent-text-color);
+}
+
+.email-header:hover .header-contacts-icon,
+.email-header:focus .header-contacts-icon {
+    fill: var(--accent-text-color);
+}
+
+.tel-header:hover .header-contacts-icon,
+.tel-header:focus .header-contacts-icon {
+    fill: var(--accent-text-color);
+}
