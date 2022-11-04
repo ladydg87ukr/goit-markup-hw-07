@@ -27,7 +27,21 @@
     color: var(--light-text-color);
 }
 
-.email-footer,
+.email-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
 .tel-footer {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -37,17 +51,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
 }
 
-.email-footer:hover,
-.email-footer:focus {
-    color: var(--accent-text-color);
-}
-
-.tel-footer:hover,
-.tel-footer:focus {
-    color: var(--accent-text-color);
-}
 
 .soc-icons-footer {
     margin-left: 70px;
@@ -64,17 +73,19 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
 }
 
-.footer-soc-icons-link:hover,
-.footer-soc-icons-link:focus {
-    background-color: var(--accent-text-color);
+.footer-soc-icons-icon {
+    .footer-soc-icons-link:hover &,
+    .footer-soc-icons-link:focus & {
+        fill: var(--light-text-color);
+    }
 }
 
-.footer-soc-icons-link:hover .footer-soc-icons-icon,
-.footer-soc-icons-link:focus .footer-soc-icons-icon {
-    fill: var(--light-text-color);
-}
 
 /* Підписка у футері */
 
@@ -137,15 +148,14 @@
     line-height: 1.25px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.input-subscr::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .subscr-div {

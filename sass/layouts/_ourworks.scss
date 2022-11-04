@@ -3,24 +3,22 @@
 .ourworks {
     background-color: var(--primary-background-color);
     padding-bottom: 24px;
+        &-link {
+            text-decoration: none;
+            position: relative;
+        }
+        &-image {
+            display: block;
+        }
+        &-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: +70px;
+            height: 70px;
+            width: 100%;
+            background: rgba(47, 48, 58, 0.8);
+        }
 }
 
-.ourworks-link {
-    text-decoration: none;
-    position: relative;
-}
-
-.our-works-image {
-    display: block;
-}
-
-.ourworks-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: +70px;
-    height: 70px;
-    width: 100%;
-    background: rgba(47, 48, 58, 0.8);
-}

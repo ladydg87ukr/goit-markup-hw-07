@@ -104,46 +104,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    span {
+        width: 16px;
+        height: 15px;
+        border: 2px solid var(--logo-color);
+        border-radius: 2px;
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+    
+        .input-check:checked+& {
+            background-color: var(--accent-text-color);
+            border-color: transparent;
+            fill: var(--light-text-color);
+        }
+    
+        .input-check:focus+& {
+            border-color: var(--accent-text-color);
+        }
+    }
 }
 
-.checkbox-text span {
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--logo-color);
-    border-radius: 2px;
-    margin-right: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-}
 
-.input-check:checked+.checkbox-text span {
-    background-color: var(--accent-text-color);
-    border-color: transparent;
-    fill: var(--light-text-color);
-}
-
-.input-check:focus+.checkbox-text span {
-    border-color: var(--accent-text-color);
-}
-
-/*.checkbox-text::before {
-  content: ;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--logo-color);
-  border-radius: 2px;
-  margin-right: 7px;
-}
-
-.input-check:checked + .checkbox-text::before {
-  background-color: var(--accent-text-color);
-  background-image: url(../images/form/check.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  border-color: transparent;
-}*/
 
 .modal-input,
 .comment-input {
@@ -161,19 +145,21 @@
 
     padding-left: 42px;
     resize: none;
-}
 
-.modal-input:focus,
-.comment-input:focus {
-    border: 1px solid var(--accent-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &:focus,
+    &:focus {
+        border: 1px solid var(--accent-text-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.modal-input:focus+.modal-input-icon {
-    fill: var(--accent-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &::placeholder,
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .comment-input {
@@ -181,18 +167,15 @@
     padding: 12px 16px;
 }
 
-.modal-input::placeholder,
-.comment-input::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
 .modal-input-icon {
     position: absolute;
     top: 25%;
     left: 53px;
+    .modal-input:focus + & {
+        fill: var(--accent-text-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .input-wrap {

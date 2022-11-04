@@ -2,6 +2,10 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .soc-icons-link:hover &,
+    .soc-icons-link:focus & {
+        fill: var(--light-text-color);
+    }
 }
 
 .soc-icons-list {
@@ -28,14 +32,9 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
 }
 
-.soc-icons-link:hover,
-.soc-icons-link:focus {
-    background-color: var(--accent-text-color);
-}
-
-.soc-icons-link:hover .soc-icons-icon,
-.soc-icons-link:focus .soc-icons-icon {
-    fill: var(--light-text-color);
-}

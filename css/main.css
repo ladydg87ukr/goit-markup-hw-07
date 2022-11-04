@@ -613,16 +613,13 @@ body {
   background-color: var(--primary-background-color);
   padding-bottom: 24px;
 }
-
 .ourworks-link {
   text-decoration: none;
   position: relative;
 }
-
-.our-works-image {
+.ourworks-image {
   display: block;
 }
-
 .ourworks-overlay {
   display: flex;
   justify-content: center;
@@ -662,24 +659,16 @@ body {
 }
 
 /* Секція Постійні клієнти */
-.ourclients {
+.our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .our-clients-icon {
   fill: var(--svg-main-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.list-our-clients-substrate {
-  display: flex;
-  align-items: center;
-  fill: var(--svg-main-color);
-}
-
 .our-clients-link {
   display: flex;
   justify-content: center;
@@ -691,6 +680,12 @@ body {
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-our-clients-substrate {
+  display: flex;
+  align-items: center;
+  fill: var(--svg-main-color);
 }
 
 /* substrate - это подложка, div */
