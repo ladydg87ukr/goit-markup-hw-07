@@ -1,3 +1,13 @@
+.nav-border {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.container-nav,
+.container-nav-border {
+    display: flex;
+    align-items: center;
+}
+
 /* Контактная информация */
 
 .header-contacts-icon {
